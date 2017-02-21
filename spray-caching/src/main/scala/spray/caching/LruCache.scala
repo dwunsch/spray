@@ -108,7 +108,7 @@ final class SimpleLruCache[V](val maxCapacity: Int, val initialCapacity: Int) ex
  * limits the maximum time an entry is kept without having been accessed. If both values are non-zero the time-to-live
  * has to be strictly greater than the time-to-idle.
  * Note that expired entries are only evicted upon next access (or by being thrown out by the capacity constraint), so
- * they might prevent gargabe collection of their values for longer than expected.
+ * they might prevent garbage collection of their values for longer than expected.
  *
  * @param timeToLive the time-to-live in millis, zero for disabling ttl-expiration
  * @param timeToIdle the time-to-idle in millis, zero for disabling tti-expiration
